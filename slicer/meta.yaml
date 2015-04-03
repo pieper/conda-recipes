@@ -1,0 +1,23 @@
+package:
+  name: slicer
+  version: "4.4.0"
+
+source:
+  git_url: http://github.com/Slicer/Slicer.git
+  git_tag:  v4.4.0
+
+requirements:
+  build:
+    - python
+    - cmake      # [not win]
+  run:
+    - python
+
+test:
+  imports:
+    - SimpleITK
+
+about:
+  home: http::/www.slicer.org
+  license: 3D Slicer license (BSD-like)
+  summary: Extensible medical image computing application
